@@ -1,4 +1,4 @@
-* {
+body {
 	font-family: 'Mina', sans-serif;
 }
 
@@ -33,7 +33,6 @@ ul {
 }
 
 	table {
-		font-family:arial,sans-serif;
 		border-collapse: collapse;
 	}
 
@@ -124,29 +123,32 @@ ul {
 	}
 
 	.image {
-	background-image: url("stellaxzeph.jpg"); 
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size:cover;
-	height: 600px;
-	position: relative;
+		background-image: url("../Images/stellaxzeph.jpg"); 
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size:cover;
+		height: 600px;
+		position: relative;
 	}
 
 	.text {
+		font-family: 'Dancing Script', cursive;
 		text-align: center;
 		position: absolute;
 		top:50%;
 		left:50%;
 		transform: translate(-50%, -50%);
-		color:white;
+		color:silver;
 		opacity: 0.5;
 		margin-top:50px;
+
 	}
 
 	#basic {
-	font-family: 'Indie Flower', cursive;
-	color: navy;
-}
+		font-family: 'Indie Flower', cursive;
+		color: navy;
+	}
+
 
 
 @media(max-width: 512px){
