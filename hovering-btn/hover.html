@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Mouse Hovers</title>
+	<style type="text/css">
+		button {
+			position:absolute;
+			padding-top: 10px;
+			padding-left: 10px;
+			
+		}
+
+
+	</style>
+</head>
+<body onMouseMove=("checkObj(event,document.forms[0].elements[0];")>
+	<form action='' name="frm"><div>
+			<button onMouseOver="moveObj(this);">Click me!</button>
+		</div>
+	</form>
+
+
+	<script>
+
+		
+		
+		function moveObj(obj){
+			var w = 800, h = 400;
+			newWidth = Math.floor(Math.random()*w);
+			newHeight = Math.floor(Math.random()*h);
+			obj.style.position="absolute";
+			obj.style.left=newWidth+ "px";
+			obj.style.top=newHeight+ "px";
+		}
+
+		function checkObj(event, obj){
+			var top = obj.style.top.split("px")[0];
+			var left = obj.style.left.split("px")[0];
+			if(top+5 > event.y || left+5 > event.x){moveObj(obj);}
+		}
+	</script>
+</body>
+</html>
