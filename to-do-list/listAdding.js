@@ -24,8 +24,9 @@ list.addEventListener('click', function(ev) {
 	}
 }, false);
 
-
-function newElement() {
+const form = document.getElementById('myDIV');
+form.onsubmit = function newElement(event) {
+	event.preventDefault();
 	var li = document.createElement("li");
 	var inputValue = document.getElementById("myInput").value;
 	var t = document.createTextNode(inputValue);
